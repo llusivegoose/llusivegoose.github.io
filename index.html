@@ -1,0 +1,86 @@
+
+<!-- saved from url=(0044)https://fauux.neocities.org/remembrance.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><link rel="shortcut icon" href="https://fauux.neocities.org/favicon2.gif">
+
+<script data-dapp-detection="">
+(function() {
+  let alreadyInsertedMetaTag = false
+
+  function __insertDappDetected() {
+    if (!alreadyInsertedMetaTag) {
+      const meta = document.createElement('meta')
+      meta.name = 'dapp-detected'
+      document.head.appendChild(meta)
+      alreadyInsertedMetaTag = true
+    }
+  }
+
+  if (window.hasOwnProperty('web3')) {
+    // Note a closure can't be used for this var because some sites like
+    // www.wnyc.org do a second script execution via eval for some reason.
+    window.__disableDappDetectionInsertion = true
+    // Likely oldWeb3 is undefined and it has a property only because
+    // we defined it. Some sites like wnyc.org are evaling all scripts
+    // that exist again, so this is protection against multiple calls.
+    if (window.web3 === undefined) {
+      return
+    }
+    __insertDappDetected()
+  } else {
+    var oldWeb3 = window.web3
+    Object.defineProperty(window, 'web3', {
+      configurable: true,
+      set: function (val) {
+        if (!window.__disableDappDetectionInsertion)
+          __insertDappDetected()
+        oldWeb3 = val
+      },
+      get: function () {
+        if (!window.__disableDappDetectionInsertion)
+          __insertDappDetected()
+        return oldWeb3
+      }
+    })
+  }
+})()</script></head><body background="./index_files/bgN6.gif">
+
+<div align="center">
+   
+ <title>ｒｅｍｅｍｂｒａｎｃｅ</title>
+ 
+ <style type="text/css">
+body {cursor:url("/cursor.gif"), auto;}
+</style>
+ 
+ <style type="text/css">
+a {cursor:url("/cursor2.gif"), default;}
+</style>
+ 
+<style>
+  img {
+   position:absolute;
+   bottom: 0px;
+   left: 20%;
+   width: 254px;
+   height: 644px;
+   margin-left: -77px;
+}
+  
+</style>
+
+
+
+
+<a href="http://fauux.neocities.org/vivid.html">
+<img border="0" src="./index_files/lainarmhold3.gif" alt="LoveLain" width="254" height="644"></a>
+
+
+<div id="logo"> </div>
+<iframe width="0" height="0" src="./index_files/l17IHiMj-_s.html" frameborder="0" allowfullscreen=""></iframe>
+
+
+
+
+</div>
+
+</body></html>
